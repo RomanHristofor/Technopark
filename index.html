@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Технопарк</title>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+    <div class="content">
+      <div id="layer"></div>
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="header">
+              <div class="logo span2">
+                <a href="#">
+                  <img src="svg/logo_big.svg" alt="Технопарк">
+                </a>
+                <img src="svg/menu_white.svg" class="icon-menu" alt="Лого-меню">
+              </div>
+              <div class="active-page">
+                <h3>фототехника</h3>
+                <img src="svg/filter_dark.svg" class="icon-filter" alt="Фильтер">
+              </div><!-- active-page -->
+              <a class="tell span2" href="tel:+88007775050">8 800 777 50 50</a>
+              <form action="#" class="span6 search">
+                  <input type="search" class="search-line" placeholder="поиск товаров">
+                  <input type="submit" value="">
+              </form><!-- search -->
+              <a class="delivery span2" href="#">доставка и оплата</a>
+              <ul class="menu-filter">
+                <li class="caption">
+                  <img src="svg/close_dark.svg" class="icon-close-filter" alt="Закрыть фильтр">
+                  <a href="#">подбор товаров</a>
+                </li>
+                <li class="caption"><a href="#">тип</a></li>
+                <li><a href="#" class="check">компакт-камера</a></li>
+                <li><a href="#">беззеркальная</a></li>
+                <li><a href="#">зеркальная</a></li>
+                <li><a href="#">среднеформатная</a></li>
+                <li class="caption"><a href="#">бренд</a></li>
+                <li><a href="#" class="check">Canon</a></li>
+                <li><a href="#" class="check">Nikon</a></li>
+                <li><a href="#">Sony</a></li>
+                <li><a href="#">Fujifilm</a></li>
+                <li><a href="#">Samsung</a></li>
+                <li><a href="#">Olympus</a></li>
+                <li><a href="#">Panasonic</a></li>
+                <li><a href="#">Polaroid</a></li>
+                <li class="caption"><a href="#">цена в бел.рублях</a></li>
+                <li><a href="#">до 500 000</a></li>
+                <li><a href="#">500 000 - 1 000 000</a></li>
+                <li><a href="#">1 000 000 - 2 500 000</a></li>
+                <li><a href="#">2 500 000 - 5 000 000</a></li>
+                <li><a href="#">5 000 000 - 10 000 000</a></li>
+                <li><a href="#">от 10 000 000</a></li>
+              </ul><!-- menu-filter -->
+            </div><!-- .header -->
+          </div><!-- row -->
+        </div><!-- container -->
+        <div class="container">
+          <div class="row main-menu">
+            <div class="navbar span8">
+              <nav>
+                <ul>
+                  <li><a href="#">мобильные телефоны</a></li>
+                  <li><a href="#">планшеты</a></li>
+                  <li class="active"><a href="#">фототехника</a></li>
+                  <li><a href="#">ноутбуки</a></li>
+                  <li><a href="#">телевизоры</a></li>
+                </ul>
+              </nav>
+            </div><!-- navbar -->
+            <div class="span2 offset2 basket">
+              <img src="svg/cart_white.svg" alt="basket">
+              <a href="#" class="basket-link">корзина</a>
+            </div><!-- basket -->
+
+          </div><!-- row main-menu-->
+        </div><!-- container -->
+      </header><!-- header -->
+    <!-- main block
+    ================================================== -->
+      <div class="container thumbnail">
+        <div class="row">
+          <div class="list-group span12">
+            <ul class="dropdown drop-type span3">
+              <li><img src="svg/drop_dark.svg" alt="icon-drop"><a href="#">Любого типа</a></li>
+              <li><a href="#">Компакт-камера</a></li>
+              <li><a href="#">Беззеркальная</a></li>
+              <li><a href="#">Зеркальная</a></li>
+              <li><a href="#">Среднеформатная</a></li>
+            </ul><!-- dropdown drop-type -->
+            <ul class="dropdown drop-brand span2">
+              <li><img src="svg/drop_dark.svg" alt="icon-drop"><a href="#">Любого бренда</a></li>
+              <li><a href="#">Canon</a></li>
+              <li><a href="#">Nikon</a></li>
+              <li><a href="#">Sony</a></li>
+              <li><a href="#">Fujifilm</a></li>
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">Olympus</a></li>
+              <li><a href="#">Panasonic</a></li>
+              <li><a href="#">Polaroid</a></li>
+            </ul><!-- dropdown drop-brand -->
+            <form action="#" class="span6">
+              <p>по цене</p>
+              <label class="search-start">от</label>
+              <input type="search">
+              <label class="search-finish">до</label>
+              <input type="search">
+              <p>рублей</p>
+            </form>
+          </div><!-- list-group -->
+        </div><!-- row -->
+        <div class="row">
+            <div class="thumb span3">
+              <div class="card-head">
+                <img src="images/1200d.jpg" alt="Canon EOS 1200D">
+                  <h2>Canon EOS 1200D Kit 18-55mm IS II</h2>
+                  <p>Зеркальная, 18 Мп 1.6 crop, с объективом F3.5-5.6 18-55 мм, экран 3", видоискатель оптический</p>
+              </div><!-- card-head -->
+              <div class="card-price">
+                  <span>5 967 000 руб.</span>
+                  <img src="svg/cart_blue.svg" alt="basket">
+              </div><!-- card-price -->
+            </div><!-- thumb -->
+            <div class="thumb span3">
+              <div class=""></div>
+              <div class="card-price full-img first-img">
+                <h2>Экшен-камера Xiaomi Yi Action Camera Basic Edition</h2>
+              </div>
+            </div><!-- thumb -->
+            <div class="thumb span3">
+              <div class="card-head">
+                <img src="images/700d.jpg" alt="Canon EOS 700D">
+                <h2>Canon EOS 700D Kit 18-55 IS STM</h2>
+                <p>Зеркальная, 18 Мп 1.6 crop, с объективом F3.5-5.6 18-55 мм, экран 3" сенсорный, поворотный, видоискатель оптический</p>
+              </div>
+              <div class="card-price">
+                <span>8 355 000 руб.</span>
+                <img src="svg/cart_blue.svg" alt="basket">
+              </div><!-- card-price -->
+            </div><!-- thumb -->
+            <div class="thumb span3">
+              <div class="card-head">
+                <img src="images/x100s.jpg" alt="Fujifilm X100S" class="small">
+                <h2>Fujifilm X100S</h2>
+                <p>Компакт-камера, 16.3 Мп 1.5 crop, F2.0 35 мм, экран 2.8"</p>
+              </div><!-- card-head -->
+              <div class="card-price">
+                <span>12 999 000 руб.</span>
+                <img src="svg/cart_blue.svg" alt="basket">
+              </div><!-- card-price -->
+            </div><!-- thumb -->
+        </div><!-- row -->
+
+        <div class="row">
+            <div class="thumb span3">
+              <div class="card-head">
+                <img src="images/d3200.jpg" alt="Nikon D3200">
+                <h2>Nikon D3200 Kit 18-55mm VR</h2>
+                <p>Зеркальная, 24.2 Мп 1.5 crop, с объективом F3.5-5.6 18-55 мм, экран 3", видоискатель оптический</p>
+              </div>
+              <div class="card-price">
+                  <span>5 967 000 руб.</span>
+                  <img src="svg/cart_blue.svg" alt="basket">
+              </div>
+            </div><!-- thumb -->
+
+            <div class="thumb span3">
+              <div class="card-head">
+                <img src="images/a5000.jpg" alt="Sony Alpha a5000" class="small">
+                <h2>Sony Alpha a5000 Kit 16-50mm</h2>
+                <p>Беззеркальная, 20.1 Мп 1.5 crop, с объективом F3.5-5.6 16-50 мм, экран 3" поворотный, WiFi</p>
+              </div>
+              <div class="card-price">
+                <span>6 900 000 руб.</span>
+                <img src="svg/cart_blue.svg" alt="basket">
+              </div>
+            </div><!-- thumb -->
+
+            <div class="thumb span3">
+              <div class=""></div>
+              <div class="card-head full-img second-img">
+              </div>
+            </div><!-- thumb -->
+
+            <div class="thumb span3">
+              <div class="card-head">
+                <img src="images/g7x.jpg" alt="Canon PowerShot G7 X" class="small-row2">
+                <h2>Canon PowerShot G7 X</h2>
+                <p>Компакт-камера, 20.2 Мп 1", F1.8-2.8 24-100 мм 4X, экран 3" сенсорный, видоискатель электронный, WiFi</p>
+              </div>
+              <div class="card-price">
+                <span>8 499 000 руб.</span>
+                <img src="svg/cart_blue.svg" alt="basket">
+              </div>
+            </div><!-- thumb -->
+        </div><!-- row -->
+
+        <div class="row">
+            <div class="thumb span3">
+              <div class="card-head">
+                <img src="images/700d.jpg" alt="Canon EOS 700D">
+                <h2>Canon EOS 700D Kit 18-55 IS STM</h2>
+                <p>Зеркальная, 18 Мп 1.6 crop, с объективом F3.5-5.6 18-55 мм, экран 3" сенсорный, поворотный, видоискатель оптический</p>
+              </div>
+              <div class="card-price">
+                <span>8 355 000 руб.</span>
+                <img src="svg/cart_blue.svg" alt="basket">
+              </div>
+            </div><!-- thumb -->
+            <div class="thumb span3">
+              <div class="card-head">
+                <img src="images/x100s.jpg" alt="Fujifilm X100S" class="small">
+                <h2>Fujifilm X100S</h2>
+                <p>Компакт-камера, 16.3 Мп 1.5 crop, F2.0 35 мм, экран 2.8"</p>
+              </div>
+              <div class="card-price">
+                <span>12 999 000 руб.</span>
+                <img src="svg/cart_blue.svg" alt="basket">
+              </div>
+            </div><!-- thumb -->
+            <div class="thumb span3">
+              <div class="card-head">
+                <img src="images/d3200.jpg" alt="Nikon D3200">
+                <h2>Nikon D3200 Kit 18-55mm VR</h2>
+                <p>Зеркальная, 24.2 Мп 1.5 crop, с объективом F3.5-5.6 18-55 мм, экран 3", видоискатель оптический</p>
+              </div>
+              <div class="card-price">
+                  <span>5 967 000 руб.</span>
+                  <img src="svg/cart_blue.svg" alt="basket">
+              </div>
+            </div><!-- thumb -->
+            <div class="thumb span3">
+              <div class="card-head">
+                <img src="images/a5000.jpg" alt="Sony Alpha a5000" class="small">
+                <h2>Sony Alpha a5000 Kit 16-50mm</h2>
+                <p>Беззеркальная, 20.1 Мп 1.5 crop, с объективом F3.5-5.6 16-50 мм, экран 3" поворотный, WiFi</p>
+              </div>
+              <div class="card-price">
+                <span>6 900 000 руб.</span>
+                <img src="svg/cart_blue.svg" alt="basket">
+              </div>
+            </div><!-- thumb -->
+        </div><!-- row -->
+      </div><!-- container -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="left-block span6">
+              <span >© Технопарк 2016</span>
+              <a href="#" >Доставка и оплата</a>
+              <a href="#">Техническая поддержка</a>
+            </div>
+            <div class="right-block span4 offset2">
+              <span>Сделано в <a href="#">Студии Вадима Скротского</a></span>
+            </div>
+          </div>
+        </div>
+      </footer><!-- footer -->
+    </div><!-- content -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+  <script src="js/src.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
