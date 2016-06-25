@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>cart_blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-14" sketch:type="MSArtboardGroup" transform="translate(-390.000000, -106.000000)" fill="#4488FF">
+            <path d="M409.7,110 L393,110 L394,109 L394,119 L393,118 L407,118 L406.042174,118.712652 L408.955969,109 L409.255969,109 L409.786204,109.712652 L409.7,110 L409.7,110 Z M393,109 L410,109 L407,119 L393,119 L393,109 Z M395,123 C395.552285,123 396,122.552285 396,122 C396,121.447715 395.552285,121 395,121 C394.447715,121 394,121.447715 394,122 C394,122.552285 394.447715,123 395,123 Z M395,124 C393.895431,124 393,123.104569 393,122 C393,120.895431 393.895431,120 395,120 C396.104569,120 397,120.895431 397,122 C397,123.104569 396.104569,124 395,124 Z M404,123 C404.552285,123 405,122.552285 405,122 C405,121.447715 404.552285,121 404,121 C403.447715,121 403,121.447715 403,122 C403,122.552285 403.447715,123 404,123 Z M404,124 C402.895431,124 402,123.104569 402,122 C402,120.895431 402.895431,120 404,120 C405.104569,120 406,120.895431 406,122 C406,123.104569 405.104569,124 404,124 Z M390,109 L393,109 L393,110 L390,110 L390,109 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
