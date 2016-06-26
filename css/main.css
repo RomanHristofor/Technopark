@@ -513,10 +513,12 @@ input[type="submit"] {
   min-width: 320px;
   margin: 20px 0;
   text-align: center;
+  position: relative;
 }
 
 .popup-img img {
-  width: 75%;
+  width: 80%;
+  height: 359px;
   margin-bottom: 20px;
 }
 
@@ -618,6 +620,14 @@ input[type="submit"] {
   margin:0;
   margin-bottom: -15px;
   height: 35px;
+}
+
+.line {
+  position: absolute;
+  left: 400px;
+  top: 415px;
+  border-left: 2px solid #e6e6e6;
+  height: 390px;
 }
 
 .popup-link {
@@ -919,6 +929,7 @@ input[type="submit"] {
   }
   .popup-img img {
     margin-bottom: 10px;
+    height: 100%;
   }
 /* FOOTER
   ================================================== */
@@ -1201,6 +1212,7 @@ input[type="submit"] {
   }
   .popup-img img {
     margin-bottom: 10px;
+    height: 0;
   }
   .footer {
     height: 300px;
