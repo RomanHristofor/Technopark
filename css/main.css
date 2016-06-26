@@ -231,7 +231,7 @@ input[type="submit"] {
   color: #fff;
 }
 
-/* main block
+/* MAIN BLOCK
 ============================ */
 .list-group {
   height: 70px;
@@ -636,7 +636,8 @@ input[type="submit"] {
   float: right;
   cursor: pointer;
 }
-
+/* FOOTER
+============================ */
 .footer {
   height: 140px;
   padding-top: 95px;
@@ -674,8 +675,8 @@ input[type="submit"] {
 /* Responsive CSS Grid
 ========================*/
 
-@media only screen and (max-width: 939px) {
-  header { width: 320px; }
+@media only screen and (max-width: 940px) {
+  header { width: 320px;height: 100px; }
   .content { width: 320px; }
   .container { width: 320px; }
 
@@ -695,9 +696,8 @@ input[type="submit"] {
   .list-group,.search-line,.tell,.delivery,.line{
     display: none !important;
   }
-  header {
-    height: 100px;
-  }
+  /* Header
+  ============================ */
   .header {
     background:none;
     padding:0;
@@ -867,12 +867,16 @@ input[type="submit"] {
     opacity: 1;
     background: #48f;
   }
-
+  /* MODAL
+    ================================================== */
   .thumb {
+    position: relative;
     margin:0 !important;
     width: 320px !important;
   }
   .popup {
+    top: -2px;
+    left: -1px;
     padding: 15px;
   }
   .popup-body {
@@ -886,7 +890,7 @@ input[type="submit"] {
     font: 1.2em 'robotomedium', Arial;
   }
   .popup-price {
-    width: 160px;
+    width: 135px;
   }
   .popup-price h1 {
     font: 1.1em 'robotomedium', Arial;
@@ -900,35 +904,51 @@ input[type="submit"] {
   }
   .popup-price button {
     margin: 15px 0;
-    padding: 7px 20px 7px 50px;
-    font-size: .9em;
+    padding: 7px 20px 7px 40px;
+    font-size: .8em;
+  }
+  .popup-price button img {
+    left: 10px;
   }
   .popup-price span {
     font: .9em 'robotoregular', Arial;
   }
   .popup-img {
+    min-width: 288px;
     margin-bottom: 10px;
   }
   .popup-img img {
     margin-bottom: 10px;
   }
+/* FOOTER
+  ================================================== */
   .footer {
     height: 300px;
-    padding: 14px;
+    padding: 15px;
     padding-top: 20px;
   }
   .footer .left-block {
+    position: relative;
     width: 292px;
     margin: 0;
+  }
+  .footer span {
+    position: absolute;
+    top: 200px;
+    left: -13px;
+    padding-left: 15px;
   }
   .footer .right-block {
-    width: 292px;
+    position: absolute;
+    width: 0;
     margin: 0;
-    float:left;
+    height: 0;
   }
   .footer .right-block span {
-    float:left;
-    padding-top: 70px;
+    position: absolute;
+    top: 230px;
+    left: -305px;
+    padding-left: 15px;
   }
 
   .footer .left-block a {
@@ -940,7 +960,7 @@ input[type="submit"] {
 }
 
 @media only screen and (max-device-width:480px) {
-  header { width: 320px; }
+  header { width: 320px;height: 100px; }
   .content { width: 320px; }
   .container { width: 320px; }
 
@@ -960,9 +980,7 @@ input[type="submit"] {
   .list-group,.search-line,.tell,.delivery,.line{
     display: none !important;
   }
-  header {
-    height: 100px;
-  }
+
   .header {
     background:none;
     padding:0;
@@ -1134,10 +1152,13 @@ input[type="submit"] {
   }
 
   .thumb {
+    position: relative;
     margin:0 !important;
     width: 320px !important;
   }
   .popup {
+    top: -2px;
+    left: -1px;
     padding: 15px;
   }
   .popup-body {
@@ -1151,7 +1172,7 @@ input[type="submit"] {
     font: 1.2em 'robotomedium', Arial;
   }
   .popup-price {
-    width: 160px;
+    width: 135px;
   }
   .popup-price h1 {
     font: 1.1em 'robotomedium', Arial;
@@ -1165,13 +1186,17 @@ input[type="submit"] {
   }
   .popup-price button {
     margin: 15px 0;
-    padding: 7px 20px 7px 50px;
-    font-size: .9em;
+    padding: 7px 20px 7px 40px;
+    font-size: .8em;
+  }
+  .popup-price button img {
+    left: 10px;
   }
   .popup-price span {
     font: .9em 'robotoregular', Arial;
   }
   .popup-img {
+    min-width: 288px;
     margin-bottom: 10px;
   }
   .popup-img img {
@@ -1179,21 +1204,31 @@ input[type="submit"] {
   }
   .footer {
     height: 300px;
-    padding: 14px;
+    padding: 15px;
     padding-top: 20px;
   }
   .footer .left-block {
+    position: relative;
     width: 292px;
     margin: 0;
+  }
+  .footer span {
+    position: absolute;
+    top: 200px;
+    left: -13px;
+    padding-left: 15px;
   }
   .footer .right-block {
-    width: 292px;
+    position: absolute;
+    width: 0;
     margin: 0;
-    float:left;
+    height: 0;
   }
   .footer .right-block span {
-    float:left;
-    padding-top: 70px;
+    position: absolute;
+    top: 230px;
+    left: -305px;
+    padding-left: 15px;
   }
 
   .footer .left-block a {
