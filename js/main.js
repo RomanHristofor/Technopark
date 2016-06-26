@@ -12,6 +12,7 @@ var blocks = document.querySelectorAll(".thumb"),
                         '<div class="popup-price">'+productArrayObj[j].price+'</div>'+
                         '<div class="popup-body">'+productArrayObj[j].body+'</div>' +
                         '<div class="popup-character">'+productArrayObj[j].character+'</div>' +
+                        '<div class="line"></div>'+
                         '<div class="popup-link">'+productArrayObj[j].link+'</div>'+
                      '</div>';
     div.setAttribute("style", "display:none");
