@@ -13,9 +13,9 @@ body {
 @font-face{
   font-family: 'robotomedium';
   src: url(../fonts/Roboto-Medium.ttf);
-  src: local('î¿è'),
+/*  src: local('î¿è'),
   url('../fonts/roboto-medium.woff2') format('woff2'),
-  url('../fonts/roboto-medium.woff') format('woff');
+  url('../fonts/roboto-medium.woff') format('woff');*/
   font-weight: normal;
   font-style: normal;
 }
@@ -23,9 +23,9 @@ body {
 @font-face {
   font-family: 'robotoregular';
   src: url(../fonts/Roboto-Regular.ttf);
-  src: local('î¿è'),
+/*  src: local('î¿è'),
   url('../fonts/roboto-regular.woff2') format('woff2'),
-  url('../fonts/roboto-regular.woff') format('woff');
+  url('../fonts/roboto-regular.woff') format('woff');*/
   font-weight: normal;
   font-style: normal;
 }
@@ -61,7 +61,7 @@ body {
 
 [class*="span"]:last-child {
   margin-right: 30px;
-  float: right;
+  float: left;
 }
 
 .span1  { width:   73px }
@@ -398,7 +398,7 @@ input[type="submit"] {
 }
 
 .thumb:first-child {
-  margin-left: 15px;
+  margin-left: 0;
 }
 .thumb:last-child {
   border-right: 1px solid #fff;
@@ -682,13 +682,24 @@ input[type="submit"] {
 .close-main-menu {
   display: none;
 }
+
 /* Responsive CSS Grid
 ========================*/
 
-@media only screen and (max-width: 940px) {
-  header { width: 320px;height: 100px; }
-  .content { width: 320px; }
-  .container { width: 320px; }
+@media (max-width: 1024px) {
+  .thumb:first-child {
+    margin-left: 0;
+  }
+
+  [class*="span"]:last-child {
+    float: left;
+  }
+}
+
+@media (max-width: 992px) {
+  header { width: 100%;height: 100px; }
+  .content { width: 100%; }
+  .container { width: 100%; }
 
   .span1,
   .span2,
@@ -701,7 +712,7 @@ input[type="submit"] {
   .span9,
   .span10,
   .span11,
-  .span12 { width: 320px; }
+  .span12 { width: 100%; }
 
   .list-group,.search-line,.tell,.delivery,.line{
     display: none !important;
@@ -839,6 +850,7 @@ input[type="submit"] {
     right: 78px;
     top: -33px;
     z-index: 99;
+    float: right !important;
   }
   .basket .basket-link {
     display: none;
@@ -881,8 +893,8 @@ input[type="submit"] {
     ================================================== */
   .thumb {
     position: relative;
-    margin:0 !important;
-    width: 320px !important;
+    margin:0;
+    width: 320px;
   }
   .popup {
     top: -2px;
@@ -970,283 +982,12 @@ input[type="submit"] {
   }
 }
 
-@media only screen and (max-device-width:480px) {
-  header { width: 320px;height: 100px; }
-  .content { width: 320px; }
-  .container { width: 320px; }
-
-  .span1,
-  .span2,
-  .span3,
-  .span4,
-  .span5,
-  .span6,
-  .span7,
-  .span8,
-  .span9,
-  .span10,
-  .span11,
-  .span12 { width: 320px; }
-
-  .list-group,.search-line,.tell,.delivery,.line{
-    display: none !important;
-  }
-
-  .header {
-    background:none;
-    padding:0;
-    height: 50px;
-    z-index: 91;
-  }
-  .logo {
-    height: 50px;
-    padding-top: 15px;
-    margin: 0!important;
-    background: #48f;
-    width: 320px !important;
-  }
-
-  .logo a img {
-    display: none;
-  }
-  .logo:before {
-    content:"";
-    position: absolute;
-    height: 17px;
-    width: 125px;
-    left: 70px;
-    background: url(../svg/logo_small.svg) no-repeat;
-  }
-  .icon-menu {
-    display: block !important;
-    width: 20px;
-    height: 20px;
-    margin-left: 20px;
-    position: absolute;
-    cursor: pointer;
-  }
-  .active-page {
-    display: block;
-    height: 50px;
-    padding-top: 20px;
-    color: #444;
-    border-bottom: 1px solid #e6e6e6;
-    position: relative;
-    top: 50px;
-    background: #fff;
-  }
-  .active-page h3 {
-    margin:0 0 0 20px;
-    position: absolute;
-  }
-  .active-page .icon-filter {
-    position: absolute;
-    right:20px;
-    cursor: pointer;
-  }
-
-  .menu-filter {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 50px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-transform: capitalize;
-    width: 230px;
-    height: auto;
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
-    background: #fff;
-    z-index: 91;
-  }
-
-  .menu-filter .icon-close-filter {
-    cursor: pointer;
-  }
-
-  .menu-filter img {
-    float: right;
-    margin: 15px 23px 0 0;
-  }
-
-  .menu-filter li {
-    padding: 0;
-    margin-left: 20px;
-    border-bottom: 1px solid #e6e6e6;
-  }
-
-  .menu-filter a {
-    font: 1em 'robotoregular', Arial;
-    color: #444;
-    text-decoration: none;
-    padding: 15px 0;
-    text-align: left;
-  }
-
-  .menu-filter .caption {
-    padding-left: 20px;
-    margin: 0;
-  }
-
-  .menu-filter .caption a {
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-top: 25px;
-    color:#999;
-  }
-  .menu-filter .check {
-    background: url(../svg/check_blue.svg) center right 10% no-repeat;
-    font-weight: bold;
-  }
-  .menu-filter li:last-child {
-    margin-bottom: 90px;
-  }
-  .menu-filter li:first-child:hover {
-    background: rgba(68,136,255, 0.05);
-  }
-  .search {
-    position: absolute;
-    right: 85px;
-    width: 0;
-    min-height: 0;
-    height: 0;
-    top: 15px;
-  }
-
-  .main-menu {
-    height: 0;
-  }
-  .basket {
-    width: 0;
-    height: 0;
-    right: 78px;
-    top: -33px;
-    z-index: 99;
-  }
-  .basket .basket-link {
-    display: none;
-  }
-
-  .navbar {
-    display: none;
-    height: auto;
-    position: absolute;
-    z-index: 999;
-    margin: 0 !important;
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
-  }
-  .navbar .close-main-menu {
-    display: block;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-  }
-  .navbar nav ul {
-    margin: 0;
-  }
-  .navbar ul li {
-    display: block !important;
-    font-size: .8em;
-    cursor:pointer;
-    background: #999;
-    margin: 0 !important;
-    border-bottom: 1px solid #535f68;
-  }
-  .navbar nav ul li a {
-    width: 100%;
-    text-align: left;
-  }
-  .navbar nav ul li:hover {
-    opacity: 1;
-    background: #48f;
-  }
-
+@media (max-width: 959px) {
   .thumb {
-    position: relative;
-    margin:0 !important;
-    width: 320px !important;
-  }
-  .popup {
-    top: -2px;
-    left: -1px;
-    padding: 15px;
-  }
-  .popup-body {
-    display: none;
-  }
-  .popup-title {
-    width: 145px;
-    margin-bottom: 10px;
-  }
-  .popup-title h1 {
-    font: 1.2em 'robotomedium', Arial;
-  }
-  .popup-price {
-    width: 135px;
-  }
-  .popup-price h1 {
-    font: 1.1em 'robotomedium', Arial;
-  }
-  .popup-character {
-    margin-bottom: 10px;
-  }
-  .popup-character pre p{
-    font: .9em 'robotoregular', Arial;
-    margin-bottom: -25px;
-  }
-  .popup-price button {
-    margin: 15px 0;
-    padding: 7px 20px 7px 40px;
-    font-size: .8em;
-  }
-  .popup-price button img {
-    left: 10px;
-  }
-  .popup-price span {
-    font: .9em 'robotoregular', Arial;
-  }
-  .popup-img {
-    min-width: 288px;
-    margin-bottom: 10px;
-  }
-  .popup-img img {
-    margin-bottom: 10px;
-    height: 0;
-  }
-  .footer {
-    height: 300px;
-    padding: 15px;
-    padding-top: 20px;
-  }
-  .footer .left-block {
-    position: relative;
-    width: 292px;
-    margin: 0;
-  }
-  .footer span {
-    position: absolute;
-    top: 200px;
-    left: -13px;
-    padding-left: 15px;
-  }
-  .footer .right-block {
-    position: absolute;
-    width: 0;
-    margin: 0;
-    height: 0;
-  }
-  .footer .right-block span {
-    position: absolute;
-    top: 230px;
-    left: -305px;
-    padding-left: 15px;
+    width: 100%;
   }
 
-  .footer .left-block a {
-    display: block;
-    padding: 30px 0;
-    border-bottom: 1px solid #e6e6e6;
-    width: inherit;
+  .thumb:last-child {
+    width: 100%;
   }
 }
