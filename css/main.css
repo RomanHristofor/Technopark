@@ -455,9 +455,11 @@ input[type="submit"] {
 .thumb .first-img {
   position: relative;
   background-image: url(../images/banner_a.png);
+  background-size: cover;
 }
 .thumb .second-img {
   background-image: url(../images/banner_b.png);
+  background-size: cover;
 }
 
 .thumb .full-img h2 {
